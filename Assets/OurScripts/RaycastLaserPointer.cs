@@ -70,13 +70,11 @@ public class RaycastLaserPointer : MonoBehaviour
             {
                 if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger))
                 {
-                    //Debug.Log("Pickup button pressed!");
                     //Pick up obj
                     PickUpObject(raycastHit.transform);
 
                     //Disable player movement
                     ovrPlayerController.EnableRotation = false;
-                    //ovrPlayerController.EnableLinearMovement = false;
                 }
                 else if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger))
                 {
